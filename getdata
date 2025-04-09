@@ -1,0 +1,8 @@
+pip install git+https://github.com/CarloLepelaars/flocky.git
+from flocky.api import get_task
+
+# task 7 데이터를 리스트 of 딕셔너리 형태로 가져오기
+task_data_list = get_task(7, as_df=False)
+
+# 데이터 확인 (일부만 출력)
+print(task_data_list[:3])
